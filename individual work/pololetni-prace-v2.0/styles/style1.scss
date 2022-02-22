@@ -1,0 +1,75 @@
+@import "barvy";
+@import "back";
+@import "typing-animace";
+@import "bot";
+
+.mid {
+  height: 94%;
+  width: 100%;
+  background-color: $bc;
+  display: flex;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.side {
+  position: absolute;
+  background-image: url(obrazky/sipka.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-bottom-color: $c;
+  border-right-color: $c;
+  width: 1.5%;
+  height: 3%;
+  align-self: flex-start;
+}
+
+.side:hover {
+  background-image: url(obrazky/sipka-dolu.png);
+}
+
+.side:hover + .column {
+  display: flex;
+}
+
+.column {
+  width: 25%;
+  height: 20%;
+  display: none;
+  flex-direction: column;
+  border-right-color: $c;
+  border-right-style: solid;
+  border-bottom-color: $c;
+  border-bottom-style: solid;
+  border-radius: 0px 0px 10px 0px;
+  align-items: center;
+}
+
+.text {
+  width: 80%;
+  height: 25%;
+  margin: 15px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: $c;
+  border-radius: 20px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bolder;
+}
+
+.real {
+  width: 45vmax;
+  height: 71vmax;
+}
+.shrek {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

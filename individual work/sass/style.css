@@ -1,0 +1,13 @@
+body {
+  background-color: yellow;
+}
+
+.content {
+  background-color: blue;
+}
+
+.content q p {
+  padding: 2rem;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
