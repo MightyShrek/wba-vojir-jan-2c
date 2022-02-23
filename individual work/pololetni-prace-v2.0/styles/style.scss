@@ -18,14 +18,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .cat-div {
@@ -33,19 +33,19 @@
   width: 12.5%;
   margin-right: 20px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .cat {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
 .osel-div {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   margin-bottom: 140vh;
   height: 20vh;
   width: 12.5%;
@@ -59,12 +59,34 @@
 .green {
   margin-top: 30px;
   border-style: solid;
-  border-color: #575f24;
+  border-color: $sc;
+  border-width: 2.5px;
+  border-bottom-width: 4.5px;
   width: 90%;
   height: 85%;
   border-radius: 18px 18px 18px 18px;
-  -webkit-box-shadow: 0px 0px 60px 20px #cc9c33;
-          box-shadow: 0px 0px 60px 20px #cc9c33;
+  -webkit-box-shadow: 0px 0px 60px 20px $bc;
+  box-shadow: 0px 0px 60px 20px $bc;
+}
+
+.top {
+  height: 6%;
+  width: 100%;
+  background-color: $bc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid $sc;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  border-radius: 15px 15px 0px 0px;
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-family: "Source Code Pro", monospace;
 }
 
 h1 {
@@ -89,16 +111,16 @@ h1::after {
 }
 
 h1::before {
-  background-color: #cc9c33;
+  background-color: $bc;
   -webkit-animation: napis 5s steps(65) forwards;
-          animation: napis 5s steps(65) forwards;
+  animation: napis 5s steps(65) forwards;
 }
 
 h1::after {
   width: 0.1em;
   background: black;
   -webkit-animation: napis 5s steps(65) forwards, blink 750ms steps(65) infinite;
-          animation: napis 5s steps(65) forwards, blink 750ms steps(65) infinite;
+  animation: napis 5s steps(65) forwards, blink 750ms steps(65) infinite;
 }
 
 @-webkit-keyframes napis {
@@ -125,23 +147,33 @@ h1::after {
   }
 }
 
+.mid {
+  height: 94%;
+  width: 100%;
+  background-color: $bc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 0px 15px 15px;
+}
+
 .bot {
   width: 90%;
   height: 10%;
   margin-top: 60px;
-  background-color: #cc9c33;
+  background-color: $bc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border-radius: 15px 15px 0px 0px;
   border-style: solid;
-  border-color: #575f24;
-  -webkit-box-shadow: 0px 0px 60px 20px #cc9c33;
-          box-shadow: 0px 0px 60px 20px #cc9c33;
+  border-color: $sc;
+  -webkit-box-shadow: 0px 0px 60px 20px $Bc;
+  box-shadow: 0px 0px 60px 20px $bc;
 }
 
 .kontakt {
@@ -151,19 +183,19 @@ h1::after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .mail {
-  color: #474747;
+  color: $text;
   height: 50%;
   width: 50%;
   text-align: center;
 }
 
 .phone {
-  color: #474747;
+  color: $text;
   height: 50%;
   width: 50%;
   text-align: center;
@@ -179,52 +211,52 @@ h1::after {
 }
 
 .MightyShrek {
-  color: #474747;
+  color: $text;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   height: 20%;
   width: 50%;
   margin-left: 15px;
 }
 
 .info {
-  color: #474747;
+  color: $text;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   text-align: end;
   margin-right: 15px;
   height: 20%;
   width: 50%;
 }
 
-.mid {
-  height: 94%;
-  width: 100%;
-  background-color: #cc9c33;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 0px 0px 15px 15px;
+.ples {
+  border-style: solid;
+  border-color: $sc;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .side {
   position: absolute;
-  background-image: url(obrazky/sipka.png);
+  background-image: url(../obrazky/sipka.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   border-right-style: solid;
   border-bottom-style: solid;
-  border-bottom-color: #575f24;
-  border-right-color: #575f24;
+  border-bottom-color: $sc;
+  border-right-color: $sc;
   width: 1.5%;
   height: 3%;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .side:hover {
-  background-image: url(obrazky/sipka-dolu.png);
+  background-image: url(../obrazky/sipka-dolu.png);
 }
 
 .side:hover + .column {
@@ -239,16 +271,16 @@ h1::after {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-right-color: #575f24;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-right-color: $sc;
   border-right-style: solid;
-  border-bottom-color: #575f24;
+  border-bottom-color: $sc;
   border-bottom-style: solid;
   border-radius: 0px 0px 10px 0px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .text {
@@ -260,13 +292,13 @@ h1::after {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-style: solid;
-  border-color: #575f24;
+  border-color: $sc;
   border-radius: 20px;
   font-family: "Source Code Pro", monospace;
   font-weight: bolder;
@@ -280,14 +312,11 @@ h1::after {
 .shrek {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-/*# sourceMappingURL=style1.css.map */

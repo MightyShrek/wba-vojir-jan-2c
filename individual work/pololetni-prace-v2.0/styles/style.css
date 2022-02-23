@@ -1,7 +1,7 @@
 .screen {
   width: 100vw;
   height: 1800px;
-  background-image: url("f349NvJ.jpg");
+  background-image: url("../obrazky/f349NvJ.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@
 }
 
 .cat {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -60,6 +60,8 @@
   margin-top: 30px;
   border-style: solid;
   border-color: #575f24;
+  border-width: 2.5px;
+  border-bottom-width: 4.5px;
   width: 90%;
   height: 85%;
   border-radius: 18px 18px 18px 18px;
@@ -186,14 +188,14 @@ h1::after {
 }
 
 .mail {
-  color: #474747;
+  color: #272727;
   height: 50%;
   width: 50%;
   text-align: center;
 }
 
 .phone {
-  color: #474747;
+  color: #272727;
   height: 50%;
   width: 50%;
   text-align: center;
@@ -209,7 +211,7 @@ h1::after {
 }
 
 .MightyShrek {
-  color: #474747;
+  color: #272727;
   -ms-flex-item-align: end;
   align-self: flex-end;
   height: 20%;
@@ -218,7 +220,7 @@ h1::after {
 }
 
 .info {
-  color: #474747;
+  color: #272727;
   -ms-flex-item-align: end;
   align-self: flex-end;
   text-align: end;
@@ -239,7 +241,7 @@ h1::after {
 
 .side {
   position: absolute;
-  background-image: url(sipka.png);
+  background-image: url(../obrazky/sipka.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,7 +256,7 @@ h1::after {
 }
 
 .side:hover {
-  background-image: url(sipka-dolu.png);
+  background-image: url(../obrazky/sipka-dolu.png);
 }
 
 .side:hover + .column {
@@ -320,3 +322,4 @@ h1::after {
   -ms-flex-align: center;
   align-items: center;
 }
+/*# sourceMappingURL=style.css.map */
