@@ -1,0 +1,87 @@
+.top {
+  height: 6%;
+  width: 100%;
+  background-color: $bc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid $sc;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  border-radius: 15px 15px 0px 0px;
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-family: "Source Code Pro", monospace;
+}
+
+h1 {
+  font-size: 2.8vh;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  font-weight: 100;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 100%;
+}
+
+.ples {
+  border-style: solid;
+  border-color: $sc;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background-color: $bc;
+  -webkit-animation: napis 5s steps(65) forwards;
+  animation: napis 5s steps(65) forwards;
+}
+
+h1::after {
+  width: 0.1em;
+  background: black;
+  -webkit-animation: napis 5s steps(65) forwards, blink 750ms steps(65) infinite;
+  animation: napis 5s steps(65) forwards, blink 750ms steps(65) infinite;
+}
+
+@-webkit-keyframes napis {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes napis {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
