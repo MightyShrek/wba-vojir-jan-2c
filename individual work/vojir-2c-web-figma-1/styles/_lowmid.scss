@@ -1,0 +1,47 @@
+.lowmid {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  height: 10%;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.place {
+  height: 22.5%;
+  width: 100%;
+  background-color: red;
+  border: black solid 2px;
+}
+
+.chci2 {
+  height: 22.5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-div2 {
+  background-color: #7c7474;
+  height: 20%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.15rem 0.35rem 0.35rem rgb(90, 90, 90);
+}
+
+.button2 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-family: "Lato";
+  text-align: center;
+}

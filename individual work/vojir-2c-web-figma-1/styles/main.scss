@@ -1,54 +1,15 @@
 .main {
-  height: 200vh;
+  height: 180vh;
   width: 100vw;
   background-color: blue;
 }
 
-.header {
-  display: flex;
-  height: 15vh;
-  width: 100vw;
-  background-color: green;
-}
-
-.logo {
-  height: 100%;
-}
-
-.burgir-div {
-  align-self: center;
-  justify-self: flex-end;
-}
-
-.burgir {
-  height: 40%;
-}
-
-.mid {
-  height: 170vh;
-  width: 100vw;
-  background-color: yellow;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.dovolena-box {
-  background-color: black;
-  height: 25%;
-  width: 85%;
-  align-self: flex-start;
-  margin-top: 2rem;
-}
-
-.place {
-  height: 15%;
-  width: 85%;
-}
+@import "header";
+@import "topmid";
+@import "lowmid";
 
 .footer {
   height: 15vh;
   width: 100vw;
-  background-color: red;
+  background-color: #cbc1b1;
 }
