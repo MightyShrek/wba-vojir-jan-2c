@@ -1,5 +1,5 @@
 .main {
-  height: 160vh;
+  height: 200vh;
   width: 100vw;
   background-color: blue;
 }
@@ -29,7 +29,7 @@
 }
 
 .mid {
-  height: 45vh;
+  height: 170vh;
   width: 100vw;
   background-color: yellow;
   display: -webkit-box;
@@ -45,20 +45,19 @@
 
 .dovolena-box {
   background-color: black;
-  height: 80%;
+  height: 25%;
+  width: 85%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 2rem;
+}
+
+.place {
+  height: 15%;
   width: 85%;
 }
 
-.lowmid {
-  height: 100vh;
-  width: 100vw;
-  background-color: lightcyan;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.lowmid .footer {
+.footer {
   height: 15vh;
   width: 100vw;
   background-color: red;
