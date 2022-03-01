@@ -7,13 +7,19 @@
 
 .logo {
   height: 100%;
+  margin-left: 7vw;
 }
 
 .burgir-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 80%;
   align-self: center;
-  justify-self: flex-end;
 }
 
 .burgir {
   height: 40%;
+  margin-right: 12vw;
 }

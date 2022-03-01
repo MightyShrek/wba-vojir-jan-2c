@@ -15,17 +15,28 @@
 
 .logo {
   height: 100%;
+  margin-left: 7vw;
 }
 
 .burgir-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+  width: 80%;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
-  justify-self: flex-end;
 }
 
 .burgir {
   height: 40%;
+  margin-right: 12vw;
 }
 
 .topmid {
@@ -138,6 +149,7 @@
 }
 
 .button {
+  font-size: 0.8rem;
   font-weight: bold;
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -163,11 +175,40 @@
   font-weight: bold;
 }
 
-.place {
-  height: 22.5%;
+.places {
+  height: 67.5%;
   width: 100%;
-  background-color: red;
-  border: black solid 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 33.3%;
+  width: 100%;
+}
+
+.image {
+  margin-left: 3vh;
+  height: 100%;
+  width: 34%;
+}
+
+.text {
+  margin-top: 2vh;
+  height: 100%;
+  width: 66%;
 }
 
 .chci2 {
@@ -207,11 +248,31 @@
   letter-spacing: 0.1em;
   font-family: "Lato";
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .footer {
   height: 15vh;
   width: 100vw;
   background-color: #cbc1b1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bot {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=main.css.map */

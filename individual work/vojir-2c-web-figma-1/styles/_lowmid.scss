@@ -13,11 +13,30 @@
   font-weight: bold;
 }
 
-.place {
-  height: 22.5%;
+.places {
+  height: 67.5%;
   width: 100%;
-  background-color: red;
-  border: black solid 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.place {
+  display: flex;
+  flex-direction: row;
+  height: 33.3%;
+  width: 100%;
+}
+
+.image {
+  margin-left: 3vh;
+  height: 100%;
+  width: 34%;
+}
+
+.text {
+  margin-top: 2vh;
+  height: 100%;
+  width: 66%;
 }
 
 .chci2 {
@@ -44,4 +63,5 @@
   letter-spacing: 0.1em;
   font-family: "Lato";
   text-align: center;
+  font-size: 0.8rem;
 }
