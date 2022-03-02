@@ -390,13 +390,13 @@
 }
 
 .mini-text {
-  margin-left: 2vw;
+  padding-left: 2vw;
   font-weight: 500;
 }
 
 .big-text {
+  padding-left: 2vw;
   font-weight: 500;
-  margin-left: 2vw;
   margin-top: 2vh;
 }
 
