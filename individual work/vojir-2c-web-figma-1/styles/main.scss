@@ -1,5 +1,5 @@
 .main {
-  height: 180vh;
+  height: 160vh;
   width: 100vw;
   background-color: blue;
 }
@@ -8,3 +8,81 @@
 @import "topmid";
 @import "lowmid";
 @import "footer";
+@import "info";
+
+.kontakt {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nadpis2 {
+  margin-bottom: 7vh;
+  height: 5%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.mini {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 2vh;
+  height: 5%;
+  width: 90%;
+  background-color: rgb(204, 201, 197);
+  display: flex;
+  align-items: center;
+}
+
+.mini-text {
+  margin-left: 2vw;
+  font-weight: 500;
+}
+
+.big-text {
+  font-weight: 500;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.big {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(204, 201, 197);
+  height: 30%;
+  width: 90%;
+}
+
+.chci3 {
+  height: 15%;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chci-div {
+  margin-top: 10vh;
+  background-color: #7c7474;
+  height: 25%;
+  width: 37%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.15rem 0.35rem 0.35rem rgb(90, 90, 90);
+}
+
+.button3 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-family: "Lato";
+  text-align: center;
+  font-size: 0.8rem;
+}
