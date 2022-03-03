@@ -30,7 +30,6 @@
 .image {
   margin-left: 3vh;
   height: 100%;
-  width: 34%;
 }
 
 .place-right {
@@ -83,4 +82,49 @@
   font-family: "Lato";
   text-align: center;
   font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    font-size: 1.8rem;
+  }
+
+  .places {
+    height: 50%;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .place {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .place-right {
+    flex-direction: column;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .image-jr {
+    height: 30vh;
+  }
+  .nadpis {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .text {
+    margin: 0px;
+  }
+  .chci2 {
+    height: 25%;
+  }
 }

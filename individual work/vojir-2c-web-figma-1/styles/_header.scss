@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: row;
   height: 15vh;
   width: 100vw;
   background-color: #cbc1b1;
@@ -8,6 +9,10 @@
 .logo {
   height: 100%;
   margin-left: 7vw;
+}
+
+.menu {
+  display: none;
 }
 
 .burgir-div {
@@ -22,4 +27,25 @@
 .burgir {
   height: 40%;
   margin-right: 12vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .burgir-div {
+    display: none;
+  }
+  .menu {
+    margin-left: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .menu-jr {
+    font-family: "Lato", sans-serif;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 30%;
+  }
 }

@@ -8,6 +8,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 15vh;
   width: 100vw;
   background-color: #cbc1b1;
@@ -16,6 +20,10 @@
 .logo {
   height: 100%;
   margin-left: 7vw;
+}
+
+.menu {
+  display: none;
 }
 
 .burgir-div {
@@ -37,6 +45,35 @@
 .burgir {
   height: 40%;
   margin-right: 12vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .burgir-div {
+    display: none;
+  }
+  .menu {
+    margin-left: 45%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu-jr {
+    font-family: "Lato", sans-serif;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 30%;
+  }
 }
 
 .topmid {
@@ -155,6 +192,39 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .topmid {
+    background-image: url(../obrazky/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .dovolena-box {
+    background-color: rgba(124, 116, 116, 0.4);
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    height: 50%;
+    width: 40%;
+    margin-right: 4vw;
+  }
+  .button-div {
+    height: 45%;
+    width: 40%;
+    -webkit-box-shadow: 0rem 0rem 0rem #5a5a5a;
+            box-shadow: 0rem 0rem 0rem #5a5a5a;
+    background-color: #7c7474;
+    color: white;
+  }
+  .snami {
+    font-size: 2rem;
+    margin-top: 2vh;
+    text-shadow: 3px 3px #a09b99;
+  }
+}
+
 .lowmid {
   height: 100vh;
   width: 100vw;
@@ -202,7 +272,6 @@
 .image {
   margin-left: 3vh;
   height: 100%;
-  width: 34%;
 }
 
 .place-right {
@@ -273,6 +342,66 @@
   font-family: "Lato";
   text-align: center;
   font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 25%;
+    font-size: 1.8rem;
+  }
+  .places {
+    height: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .place {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .place-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .image {
+    height: 100%;
+  }
+  .image-jr {
+    height: 30vh;
+  }
+  .nadpis {
+    width: 100%;
+    margin: 0px;
+  }
+  .text {
+    margin: 0px;
+  }
+  .chci2 {
+    height: 25%;
+  }
 }
 
 .footer {
@@ -447,5 +576,11 @@
   font-family: "Lato";
   text-align: center;
   font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    height: 200vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

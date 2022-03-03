@@ -9,7 +9,7 @@
 }
 
 .dovolena-box {
-  background-color: #7c7474;
+  background-color: rgb(124, 116, 116);
   height: 65%;
   width: 82.5%;
   margin-bottom: 5vh;
@@ -74,4 +74,36 @@
   font-weight: bold;
   font-family: "Lato", sans-serif;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .topmid {
+    background-image: url(../obrazky/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: flex-end;
+  }
+
+  .dovolena-box {
+    background-color: rgba(124, 116, 116, 0.4);
+    align-self: flex-end;
+    height: 50%;
+    width: 40%;
+    margin-right: 4vw;
+  }
+
+  .button-div {
+    height: 45%;
+    width: 40%;
+    box-shadow: 0rem 0rem 0rem rgb(90, 90, 90);
+    background-color: #7c7474;
+    color: white;
+  }
+
+  .snami {
+    font-size: 2rem;
+    margin-top: 2vh;
+    text-shadow: 3px 3px #a09b99;
+  }
 }
