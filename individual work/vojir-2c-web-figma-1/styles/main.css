@@ -48,12 +48,20 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .logo-div {
+    margin-right: 40%;
+  }
   .burgir-div {
     display: none;
   }
   .menu {
-    margin-left: 45%;
     height: 100%;
+    width: 50vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -64,15 +72,47 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    gap: 20px;
   }
-  .menu-jr {
-    font-family: "Lato", sans-serif;
-    margin-left: 1vw;
-    margin-right: 1vw;
+  .holiday {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
     height: 30%;
+    width: 25%;
+    font-family: "Lato", sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30%;
+    width: 50%;
+    font-family: "Lato", sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30%;
+    width: 25%;
+    font-family: "Lato", sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

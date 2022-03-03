@@ -30,22 +30,55 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .header {
+    justify-content: flex-end;
+  }
+
+  .logo-div {
+    margin-right: 40%;
+  }
+
   .burgir-div {
     display: none;
   }
   .menu {
-    margin-left: 45%;
     height: 100%;
+    width: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    gap: 20px;
   }
 
-  .menu-jr {
-    font-family: "Lato", sans-serif;
-    margin-left: 1vw;
-    margin-right: 1vw;
+  .holiday {
+    display: flex;
+    justify-items: center;
     height: 30%;
+    width: 25%;
+    font-family: "Lato", sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  .information {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    width: 50%;
+    font-family: "Lato", sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+  }
+
+  .contact {
+    display: flex;
+    height: 30%;
+    width: 25%;
+    font-family: "Lato", sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+
+    justify-content: center;
   }
 }
