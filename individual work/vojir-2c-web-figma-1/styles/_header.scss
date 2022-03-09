@@ -35,7 +35,12 @@
   }
 
   .logo-div {
-    margin-right: 40%;
+    height: 100%;
+    width: 50%;
+  }
+
+  .logo {
+    width: 123.75px;
   }
 
   .burgir-div {
@@ -47,38 +52,73 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    margin-right: 5vw;
+    gap: 5vw;
   }
 
   .holiday {
     display: flex;
     justify-items: center;
     height: 30%;
-    width: 25%;
+    width: 100px;
     font-family: "Lato", sans-serif;
-    font-size: 2vh;
+    font-size: 1.3rem;
     font-weight: bold;
     justify-content: center;
+    align-items: center;
   }
 
   .information {
     display: flex;
     justify-content: center;
     height: 30%;
-    width: 50%;
+    width: 200px;
     font-family: "Lato", sans-serif;
-    font-size: 2vh;
+    font-size: 1.3rem;
     font-weight: bold;
+    text-align: center;
+    align-items: center;
   }
 
   .contact {
     display: flex;
     height: 30%;
-    width: 25%;
+    width: 100px;
     font-family: "Lato", sans-serif;
-    font-size: 2vh;
+    font-size: 1.3rem;
     font-weight: bold;
 
     justify-content: center;
+    align-items: center;
+  }
+
+  .contact:hover {
+    background-color: #b8ac9c;
+  }
+
+  .information:hover {
+    background-color: #b8ac9c;
+  }
+
+  .holiday:hover {
+    background-color: #b8ac9c;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu {
+    justify-content: flex-end;
+  }
+
+  .holiday {
+    width: 125px;
+  }
+
+  .information {
+    width: 250px;
+  }
+
+  .contact {
+    width: 125px;
   }
 }

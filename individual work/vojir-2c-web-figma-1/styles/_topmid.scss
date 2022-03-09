@@ -10,7 +10,7 @@
 
 .dovolena-box {
   background-color: rgb(124, 116, 116);
-  height: 65%;
+  height: 45%;
   width: 82.5%;
   margin-bottom: 5vh;
   display: flex;
@@ -46,6 +46,7 @@
   width: 90%;
   font-weight: 500;
   letter-spacing: 0.1em;
+  font-size: 1rem;
   font-family: "Lato", sans-serif;
   color: white;
   text-align: justify;
@@ -62,7 +63,7 @@
 .button-div {
   background-color: #a09b99;
   height: 45%;
-  width: 40%;
+  width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,9 +89,9 @@
   .dovolena-box {
     background-color: rgba(124, 116, 116, 0.4);
     align-self: flex-end;
-    height: 50%;
-    width: 40%;
-    margin-right: 4vw;
+    height: 45%;
+    width: 35%;
+    margin-right: 2.5vw;
   }
 
   .button-div {
@@ -104,6 +105,22 @@
   .snami {
     font-size: 2rem;
     margin-top: 2vh;
+    text-align: center;
     text-shadow: 3px 3px #a09b99;
+  }
+
+  .lorem {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .snami {
+    font-size: 2.5rem;
+  }
+
+  .lorem {
+    font-size: 1.4rem;
   }
 }
