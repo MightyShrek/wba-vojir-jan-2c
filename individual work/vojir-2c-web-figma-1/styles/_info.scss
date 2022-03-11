@@ -12,11 +12,20 @@
   width: 80%;
 }
 
+.rule-top {
+  height: 50%;
+}
+
+.rule-bot {
+  height: 50%;
+}
+
 .rule {
-  height: 16.666%;
+  height: 33.33%;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .image-div {
@@ -32,4 +41,33 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
   margin-left: 5vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    height: 140vh;
+  }
+
+  .mid {
+    height: 110vh;
+  }
+
+  .rule-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .rule-bot {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rule {
+    height: 50%;
+  }
+
+  .textus {
+    font-size: 1.2rem;
+  }
 }

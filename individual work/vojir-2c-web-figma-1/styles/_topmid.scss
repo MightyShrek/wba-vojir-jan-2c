@@ -10,7 +10,7 @@
 
 .dovolena-box {
   background-color: rgb(124, 116, 116);
-  height: 45%;
+  height: 70%;
   width: 82.5%;
   margin-bottom: 5vh;
   display: flex;
@@ -53,7 +53,7 @@
   line-height: 1.35rem;
 }
 .chci {
-  height: 30%;
+  height: 21%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -78,8 +78,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .main {
+    height: 200vh;
+  }
   .topmid {
-    background-image: url(../obrazky/hero.png);
+    background-image: url(../images/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

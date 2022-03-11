@@ -1,4 +1,4 @@
-.header {
+.header-info {
   display: flex;
   flex-direction: row;
   height: 15vh;
@@ -6,7 +6,7 @@
   background-color: #cbc1b1;
 }
 
-.logo {
+.logo-info {
   height: 100%;
   margin-left: 7vw;
 }
@@ -15,38 +15,36 @@
   display: none;
 }
 
-.burgir-div {
+.burgir-div-info {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
   width: 80%;
-  align-self: center;
 }
 
-.burgir {
-  height: 40%;
+.burgir-info {
+  height: 45%;
   margin-right: 12vw;
 }
-
 @media only screen and (min-width: 768px) {
-  .header {
+  .header-info {
     justify-content: flex-end;
   }
 
-  .logo-div {
+  .logo-div-info {
     height: 100%;
     width: 50%;
     display: flex;
     align-items: center;
   }
 
-  .logo {
+  .logo-info {
     height: 123.75px;
     width: 123.75px;
   }
 
-  .burgir-div {
+  .burgir-div-info {
     display: none;
   }
   .menu {

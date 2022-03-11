@@ -9,6 +9,7 @@
 @import "lowmid";
 @import "footer";
 @import "info";
+@import "header-info";
 
 .kontakt {
   height: 90%;
@@ -85,10 +86,4 @@
   font-family: "Lato";
   text-align: center;
   font-size: 0.8rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .main {
-    height: 200vh;
-  }
 }
