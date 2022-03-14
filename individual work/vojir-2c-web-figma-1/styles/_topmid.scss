@@ -1,3 +1,5 @@
+$shadow: rgb(90, 90, 90);
+
 .topmid {
   height: 50vh;
   width: 100vw;
@@ -67,7 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.15rem 0.35rem 0.35rem rgb(90, 90, 90);
+  box-shadow: 0.15rem 0.35rem 0.35rem $shadow;
 }
 
 .button {
@@ -100,7 +102,7 @@
   .button-div {
     height: 45%;
     width: 40%;
-    box-shadow: 0rem 0rem 0rem rgb(90, 90, 90);
+    box-shadow: 0rem 0rem 0rem $shadow;
     background-color: #7c7474;
     color: white;
   }
