@@ -90,9 +90,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-items: center;
     height: 30%;
-    width: 100px;
     font-family: "Lato", sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
@@ -102,30 +100,32 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0.2vw;
+    width: 100px;
+    justify-items: center;
   }
   .information {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     height: 30%;
-    width: 200px;
     font-family: "Lato", sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0.2vw;
+    width: 200px;
   }
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 30%;
-    width: 100px;
     font-family: "Lato", sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
@@ -135,15 +135,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0.2vw;
+    height: 100px;
   }
   .contact:hover {
-    background-color: #b8ac9c;
+    background-color: #afa394;
   }
   .information:hover {
-    background-color: #b8ac9c;
+    background-color: #afa394;
   }
   .holiday:hover {
-    background-color: #b8ac9c;
+    background-color: #afa394;
   }
 }
 
@@ -758,10 +760,10 @@
 
 @media only screen and (min-width: 768px) {
   .main {
-    height: 140vh;
+    height: 130vh;
   }
   .mid {
-    height: 110vh;
+    height: 100vh;
   }
   .rule-top {
     display: -webkit-box;

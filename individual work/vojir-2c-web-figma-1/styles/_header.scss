@@ -59,52 +59,44 @@
     gap: 5vw;
   }
 
-  .holiday {
+  @mixin header-menu {
     display: flex;
-    justify-items: center;
     height: 30%;
-    width: 100px;
+
     font-family: "Lato", sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
     justify-content: center;
     align-items: center;
+    padding: 0.2vw;
+  }
+
+  .holiday {
+    @include header-menu;
+    width: 100px;
+    justify-items: center;
   }
 
   .information {
-    display: flex;
-    justify-content: center;
-    height: 30%;
+    @include header-menu;
     width: 200px;
-    font-family: "Lato", sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
   }
 
   .contact {
-    display: flex;
-    height: 30%;
-    width: 100px;
-    font-family: "Lato", sans-serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-
-    justify-content: center;
-    align-items: center;
+    @include header-menu;
+    height: 100px;
   }
 
   .contact:hover {
-    background-color: #b8ac9c;
+    background-color: #afa394;
   }
 
   .information:hover {
-    background-color: #b8ac9c;
+    background-color: #afa394;
   }
 
   .holiday:hover {
-    background-color: #b8ac9c;
+    background-color: #afa394;
   }
 }
 
