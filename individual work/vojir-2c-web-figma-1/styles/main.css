@@ -71,11 +71,11 @@
     display: none;
   }
   .menu {
-    height: 100%;
-    width: 50vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 40%;
+    width: 50vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -307,8 +307,8 @@
   .button-div {
     height: 45%;
     width: 40%;
-    -webkit-box-shadow: 0rem 0rem 0rem #5a5a5a;
-            box-shadow: 0rem 0rem 0rem #5a5a5a;
+    -webkit-box-shadow: 0.15rem 0.35rem 0.35rem #5a5a5a;
+            box-shadow: 0.15rem 0.35rem 0.35rem #5a5a5a;
     background-color: #7c7474;
     color: white;
   }
