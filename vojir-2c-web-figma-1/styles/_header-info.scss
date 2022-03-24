@@ -1,0 +1,125 @@
+.header-info {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  width: 100vw;
+  background-color: #cbc1b1;
+}
+
+.logo-info {
+  height: 100%;
+  margin-left: 7vw;
+}
+
+.menu {
+  display: none;
+}
+
+.burgir-div-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 80%;
+}
+
+.burgir-info {
+  height: 45%;
+  margin-right: 12vw;
+}
+@media only screen and (min-width: 768px) {
+  .header-info {
+    justify-content: flex-end;
+  }
+
+  .logo-div-info {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-info {
+    height: 123.75px;
+    width: 123.75px;
+  }
+
+  .burgir-div-info {
+    display: none;
+  }
+  .menu {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5vw;
+    gap: 5vw;
+  }
+
+  .holiday {
+    display: flex;
+    justify-items: center;
+    height: 30%;
+    width: 100px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    width: 200px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact {
+    display: flex;
+    height: 30%;
+    width: 100px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact:hover {
+    background-color: #b8ac9c;
+  }
+
+  .information:hover {
+    background-color: #b8ac9c;
+  }
+
+  .holiday:hover {
+    background-color: #b8ac9c;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu {
+    justify-content: flex-end;
+  }
+
+  .holiday {
+    width: 125px;
+  }
+
+  .information {
+    width: 250px;
+  }
+
+  .contact {
+    width: 125px;
+  }
+}

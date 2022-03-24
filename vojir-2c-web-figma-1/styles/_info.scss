@@ -1,0 +1,73 @@
+.mid {
+  width: 100vw;
+  height: 130vh;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-jr {
+  height: 85%;
+  width: 80%;
+}
+
+.rule-top {
+  height: 50%;
+}
+
+.rule-bot {
+  height: 50%;
+}
+
+.rule {
+  height: 33.33%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-div {
+  height: 50%;
+}
+
+.rule-img {
+  height: 100%;
+}
+
+.textus {
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-left: 5vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    height: 130vh;
+  }
+
+  .mid {
+    height: 100vh;
+  }
+
+  .rule-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .rule-bot {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rule {
+    height: 50%;
+  }
+
+  .textus {
+    font-size: 1.2rem;
+  }
+}

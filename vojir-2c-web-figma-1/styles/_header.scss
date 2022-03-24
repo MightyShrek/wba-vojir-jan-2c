@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  width: 100vw;
+  background-color: #cbc1b1;
+}
+
+.logo {
+  height: 100%;
+  margin-left: 7vw;
+}
+
+.menu {
+  display: none;
+}
+
+.burgir-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 80%;
+  align-self: center;
+}
+
+.burgir {
+  height: 40%;
+  margin-right: 12vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    justify-content: flex-end;
+  }
+
+  .logo-div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: 123.75px;
+    width: 123.75px;
+  }
+
+  .burgir-div {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    height: 40%;
+    width: 500px;
+
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5vw;
+    gap: 10px;
+  }
+
+  @mixin header-menu {
+    display: flex;
+    height: 30%;
+
+    font-family: "Lato", sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    letter-spacing: 0.1em;
+  }
+
+  .holiday {
+    @include header-menu;
+  }
+
+  .information {
+    @include header-menu;
+  }
+
+  .contact {
+    @include header-menu;
+  }
+
+  .contact:hover {
+    background-color: #afa394;
+  }
+
+  .information:hover {
+    background-color: #afa394;
+  }
+
+  .holiday:hover {
+    background-color: #afa394;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu {
+    justify-content: flex-end;
+  }
+
+  .holiday {
+    width: 125px;
+  }
+
+  .information {
+    width: 250px;
+  }
+
+  .contact {
+    width: 125px;
+  }
+}

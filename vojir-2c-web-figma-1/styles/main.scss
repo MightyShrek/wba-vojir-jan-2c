@@ -1,0 +1,13 @@
+.main {
+  height: 160vh;
+  width: 100vw;
+  background-color: #e5e5e5;
+}
+
+@import "header";
+@import "topmid";
+@import "lowmid";
+@import "footer";
+@import "kontakt";
+@import "info";
+@import "header-info";

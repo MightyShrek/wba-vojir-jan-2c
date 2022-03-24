@@ -1,0 +1,131 @@
+$shadow: rgb(90, 90, 90);
+
+.topmid {
+  height: 50vh;
+  width: 100vw;
+  background-color: #e5e5e5;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.dovolena-box {
+  background-color: rgb(124, 116, 116);
+  height: 70%;
+  width: 82.5%;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.snami-div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.snami {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.lorem-div {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lorem {
+  width: 90%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-align: justify;
+  line-height: 1.35rem;
+}
+.chci {
+  height: 21%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-div {
+  background-color: #a09b99;
+  height: 45%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.15rem 0.35rem 0.35rem $shadow;
+}
+
+.button {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    height: 200vh;
+  }
+  .topmid {
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: flex-end;
+  }
+
+  .dovolena-box {
+    background-color: rgba(124, 116, 116, 0.4);
+    align-self: flex-end;
+    height: 45%;
+    width: 35%;
+    margin-right: 2.5vw;
+  }
+
+  .button-div {
+    height: 45%;
+    width: 40%;
+    box-shadow: 0.15rem 0.35rem 0.35rem $shadow;
+    background-color: #7c7474;
+    color: white;
+  }
+
+  .snami {
+    font-size: 2rem;
+    margin-top: 2vh;
+    text-align: center;
+    text-shadow: 3px 3px #a09b99;
+  }
+
+  .lorem {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .snami {
+    font-size: 2.5rem;
+  }
+
+  .lorem {
+    font-size: 1.4rem;
+  }
+}
