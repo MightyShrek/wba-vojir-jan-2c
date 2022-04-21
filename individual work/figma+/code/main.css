@@ -1,0 +1,121 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 130vh;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  background-color: #27A94B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+#menu {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10vw;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#shrek-div {
+  height: 40vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ac35a), to(#1b861b));
+  background: linear-gradient(#5ac35a, #1b861b);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+}
+
+#ahoj {
+  background-color: #443850;
+  color: white;
+  border-radius: 30px 30px 0 30px;
+  font-size: 1.2rem;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  grid-row: 3 / span 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-column: 3 / span 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shrek {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 5;
+  grid-row: 8 / span 5;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9 / span 4;
+}
+
+#film {
+  height: 80vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a2a2a2), to(white));
+  background: linear-gradient(#a2a2a2, white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#film-box {
+  background-color: gray;
+  height: 50%;
+  width: 60%;
+}
+
+#text {
+  height: 20%;
+  width: 60%;
+}
+/*# sourceMappingURL=main.css.map */
