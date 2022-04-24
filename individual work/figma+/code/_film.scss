@@ -1,0 +1,52 @@
+#text {
+    height: 20%;
+    width: 60%;
+    margin-top: 10vh;
+    font-size: 1rem;
+    margin-bottom: 10vh;
+}
+
+#text > p {
+    text-align: center;
+}
+
+#film {
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgb(162, 162, 162), white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#film-box {
+    background-color: gray;
+    height: 35%;
+    width: 60%;
+}
+
+#cihac {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #film {
+        height: 110vh;
+    }
+    
+    #film-box {
+        background-color: gray;
+        height: 80%;
+        width: 55%;
+    }
+
+    #text {
+        font-size: 1.2rem;
+    }
+    #cihac {
+        display: block;
+        height: 25vh;
+        align-self: flex-start;
+    }
+}

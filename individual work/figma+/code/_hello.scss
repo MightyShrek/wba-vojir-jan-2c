@@ -1,7 +1,7 @@
 #shrek-div {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
-    background: linear-gradient(rgb(90, 195, 90), rgb(27, 134, 27));
+    background: linear-gradient(rgb(103, 180, 103), rgb(44, 129, 44));
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -12,7 +12,7 @@
     color: white;
     border-radius: 30px 30px 0 30px;
     font-size: 1.2rem;
-    grid-row: 3 / span 5;
+    grid-row: 3 / span 6;
     grid-column: 3 / span 7;
     display: flex;
     padding: 3vh;
@@ -24,4 +24,39 @@
     align-self: flex-end;
     grid-row: 8 / span 5;
     grid-column: 9 / span 4;
+}
+
+
+@media only screen and (min-width: 650px) {
+    #shrek  {
+        align-self: flex-end;
+        grid-row: 9 / span 4;
+        grid-column: 10 / span 3;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    #shrek-div {
+        height: 30vh;
+        width: 100%;
+    }
+
+    #shrek-div > div:nth-child(2){
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #ahoj {
+        font-size: 1.2rem;
+        grid-row: 3 / span 6;
+        grid-column: 3 / span 7;
+        padding: 3vh;
+    }
+    
+    #shrek  {
+        align-self: flex-end;
+        grid-row: 8 / span 5;
+        grid-column: 9 / span 4;
+    }
 }
