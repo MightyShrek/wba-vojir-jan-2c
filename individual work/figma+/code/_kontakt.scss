@@ -23,11 +23,28 @@
 
 #button {
     border-radius: 10px;
-    margin-top: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: white;
+    background: white;
+    border-color: transparent;
+    box-shadow: -5px 5px 1px rgb(179, 179, 179);
+}
+
+#button:hover {
+    background-color: gray;
+    color: white;
 }
 
 @media only screen and (min-width: 768px) {
     body {
-        height: 115vh;
+        height: 150vh;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin-top: 20vh;
     }
 }

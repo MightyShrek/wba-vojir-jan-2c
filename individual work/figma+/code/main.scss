@@ -6,16 +6,23 @@ body {
     height: 115vh;
 }
 
+#smile {
+    display: none;
+}
+
 @import "header";
 @import "hello";
 @import "hello-kontakt";
 @import "film";
+@import "zaliby";
 @import "footer";
 
 @media only screen and (min-width: 768px) {
     body {
         height: 160vh;
     }
-    
+    #smile {
+        display: block;
+    }
 }
 @import "kontakt";

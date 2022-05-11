@@ -6,6 +6,10 @@ body {
   height: 115vh;
 }
 
+#smile {
+  display: none;
+}
+
 header {
   height: 10%;
   width: 100%;
@@ -377,6 +381,16 @@ header {
   }
 }
 
+#zaliby {
+  height: 100vh;
+  background-color: red;
+}
+
+.zaliby-jr {
+  height: 33.33%;
+  width: 100%;
+}
+
 footer {
   height: 5vh;
   background-color: green;
@@ -425,6 +439,9 @@ footer {
   body {
     height: 160vh;
   }
+  #smile {
+    display: block;
+  }
 }
 
 #kontakt-div {
@@ -458,12 +475,33 @@ footer {
 
 #button {
   border-radius: 10px;
-  margin-top: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background-color: white;
+  background: white;
+  border-color: transparent;
+  -webkit-box-shadow: -5px 5px 1px #b3b3b3;
+          box-shadow: -5px 5px 1px #b3b3b3;
+}
+
+#button:hover {
+  background-color: gray;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
   body {
-    height: 115vh;
+    height: 150vh;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    margin-top: 20vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
