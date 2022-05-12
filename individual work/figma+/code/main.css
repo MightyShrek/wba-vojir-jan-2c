@@ -390,6 +390,70 @@ header {
   }
 }
 
+@-webkit-keyframes slider {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  65% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  65% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes slidel {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  65% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slidel {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  65% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 #spacer {
   height: 20vh;
   display: -webkit-box;
@@ -457,36 +521,78 @@ header {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 7vh;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+  -webkit-animation: slidel 1s 2s ease-in;
+          animation: slidel 1s 2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #zaliby div:nth-child(1) div:nth-child(2) {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 7vh;
+  opacity: 0;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: slider 1s 1s ease-in;
+          animation: slider 1s 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #zaliby div:nth-child(2) div:nth-child(1) {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 8vh;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+  -webkit-animation: slidel 1s 4s ease-in;
+          animation: slidel 1s 4s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #zaliby div:nth-child(2) div:nth-child(2) {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 1vh;
+  opacity: 0;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: slider 1s 3s ease-in;
+          animation: slider 1s 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #zaliby div:nth-child(3) div:nth-child(1) {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 12vh;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+  -webkit-animation: slidel 1s 6s ease-in;
+          animation: slidel 1s 6s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #zaliby div:nth-child(3) div:nth-child(2) {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 1vh;
+  opacity: 0;
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+  -webkit-animation: slider 1s 5s ease-in;
+          animation: slider 1s 5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @media only screen and (min-width: 850px) {

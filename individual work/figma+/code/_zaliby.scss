@@ -1,5 +1,36 @@
 
 
+@keyframes slider{
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    65% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidel{
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    65% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 #spacer {
     height: 20vh;
     display: flex;
@@ -45,12 +76,19 @@
         div:nth-child(1) {
          align-self: flex-end;
          margin-bottom: 7vh;
-         animation: slideL 1s ease-in 1s;
+         opacity: 0;
+         transform: translateX(500px);
+         animation: slidel 1s 2s ease-in;
+         animation-fill-mode: forwards;
         }
 
         div:nth-child(2) {
          align-self: flex-start;
-         margin-top: 7vh;  
+         margin-top: 7vh;
+         opacity: 0;
+        transform: translateX(-500px);
+         animation: slider 1s 1s ease-in;
+         animation-fill-mode: forwards;
         }
     }
     div:nth-child(2) {
@@ -58,23 +96,39 @@
         div:nth-child(1) {
          align-self: flex-end;
          margin-bottom: 8vh;   
+         opacity: 0;
+        transform: translateX(500px);
+         animation: slidel 1s 4s ease-in;
+         animation-fill-mode: forwards;
         }
 
         div:nth-child(2) {
          align-self: flex-start;
          margin-top: 1vh;   
+         opacity: 0;
+        transform: translateX(-500px);
+         animation: slider 1s 3s ease-in;
+         animation-fill-mode: forwards;
         }
     }
     div:nth-child(3) {
 
         div:nth-child(1) {
          align-self: flex-end;
-         margin-bottom: 12vh;   
+         margin-bottom: 12vh;  
+         opacity: 0;
+        transform: translateX(500px);
+         animation: slidel 1s 6s ease-in; 
+         animation-fill-mode: forwards;
         }
 
         div:nth-child(2) {
          align-self: flex-start;
          margin-top: 1vh;   
+         opacity: 0;
+         transform: translateX(-500px);
+         animation: slider 1s 5s ease-in;
+         animation-fill-mode: forwards;
         }
     }
 }
@@ -115,8 +169,4 @@
     }
 }
 
-@keyframes slideL{
-    0% { transform: translateX(-500); }
-    
-    100% { transform: translateX(0);}
-}   
+
