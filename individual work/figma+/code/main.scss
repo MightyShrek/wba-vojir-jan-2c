@@ -10,12 +10,17 @@ body {
     display: none;
 }
 
+.menu-jr {
+    cursor: pointer;
+}
+
 @import "header";
 @import "hello";
 @import "hello-kontakt";
 @import "film";
 @import "zaliby";
 @import "footer";
+
 
 @media only screen and (min-width: 768px) {
     body {

@@ -1,5 +1,5 @@
 #kontakt-div    {
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -7,8 +7,8 @@
 }
 
 #smula {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     font-size: 1.5rem;
 }
 
@@ -24,11 +24,15 @@
 #button {
     border-radius: 10px;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 30vh;
     background-color: white;
     background: white;
     border-color: transparent;
     box-shadow: -5px 5px 1px rgb(179, 179, 179);
+}
+
+#space  {
+    height: 0vh;
 }
 
 #button:hover {
@@ -45,6 +49,5 @@
         display: flex;
         justify-content: center;
         color: white;
-        margin-top: 20vh;
     }
 }

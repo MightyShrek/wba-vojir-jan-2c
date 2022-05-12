@@ -1,9 +1,122 @@
-#zaliby {
-    height:100vh;
-    background-color: red;
+
+
+#spacer {
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.zaliby-jr {
-    height: 33.33%;
-    width: 100%;
+
+#cihac-zaliby {
+    transform: rotate(180deg);
+    margin-bottom: 0px;
 }
+
+#zaliby {
+    font-size: 1rem;
+    margin-top: 2vh;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    div {
+        height: 33.33%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+        div {
+            height: 30%;
+            width: 40%;
+            border-radius: 25px;
+            background-color: #5C6784;
+            padding: 1%;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }  
+    }
+    
+    div:nth-child(1) {
+              
+        div:nth-child(1) {
+         align-self: flex-end;
+         margin-bottom: 7vh;
+         animation: slideL 1s ease-in 1s;
+        }
+
+        div:nth-child(2) {
+         align-self: flex-start;
+         margin-top: 7vh;  
+        }
+    }
+    div:nth-child(2) {
+
+        div:nth-child(1) {
+         align-self: flex-end;
+         margin-bottom: 8vh;   
+        }
+
+        div:nth-child(2) {
+         align-self: flex-start;
+         margin-top: 1vh;   
+        }
+    }
+    div:nth-child(3) {
+
+        div:nth-child(1) {
+         align-self: flex-end;
+         margin-bottom: 12vh;   
+        }
+
+        div:nth-child(2) {
+         align-self: flex-start;
+         margin-top: 1vh;   
+        }
+    }
+}
+
+
+@media only screen and (min-width: 850px) {
+    #zaliby {
+    font-size: 1.2rem;
+        div {
+            div {
+                width: 35%;
+                box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.25);
+            }  
+        }   
+        div:nth-child(1) {
+              
+            div:nth-child(1) {
+             margin-bottom: 4vh;   
+            }
+    
+            div:nth-child(2) {
+             margin-top: 6vh;  
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #zaliby {
+    
+        div {
+            div {
+                box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.25);
+                width: 30%;
+            }  
+        }  
+
+    }
+}
+
+@keyframes slideL{
+    0% { transform: translateX(-500); }
+    
+    100% { transform: translateX(0);}
+}   
